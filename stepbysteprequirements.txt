@@ -1,0 +1,1071 @@
+(dsi_participant) felipebastos@Felipes-MacBook-Pro car-customer-prediction % conda list --export > conda_requirements.txt    
+(dsi_participant) felipebastos@Felipes-MacBook-Pro car-customer-prediction % pip freeze > pip_requirements.txt           
+(dsi_participant) felipebastos@Felipes-MacBook-Pro car-customer-prediction % code conda_requirements.txt 
+(dsi_participant) felipebastos@Felipes-MacBook-Pro car-customer-prediction % conda create --name test python=3.9.19      
+Channels:
+ - defaults
+ - conda-forge
+Platform: osx-arm64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /opt/miniconda3/envs/test
+
+  added / updated specs:
+    - python=3.9.19
+
+
+The following NEW packages will be INSTALLED:
+
+  ca-certificates    pkgs/main/osx-arm64::ca-certificates-2024.12.31-hca03da5_0 
+  libcxx             pkgs/main/osx-arm64::libcxx-14.0.6-h848a8c0_0 
+  libffi             pkgs/main/osx-arm64::libffi-3.4.4-hca03da5_1 
+  ncurses            pkgs/main/osx-arm64::ncurses-6.4-h313beb8_0 
+  openssl            pkgs/main/osx-arm64::openssl-3.0.15-h80987f9_0 
+  pip                pkgs/main/osx-arm64::pip-24.2-py39hca03da5_0 
+  python             pkgs/main/osx-arm64::python-3.9.19-hb885b13_1 
+  readline           pkgs/main/osx-arm64::readline-8.2-h1a28f6b_0 
+  setuptools         pkgs/main/osx-arm64::setuptools-75.1.0-py39hca03da5_0 
+  sqlite             pkgs/main/osx-arm64::sqlite-3.45.3-h80987f9_0 
+  tk                 pkgs/main/osx-arm64::tk-8.6.14-h6ba3021_0 
+  tzdata             pkgs/main/noarch::tzdata-2024b-h04d1e81_0 
+  wheel              pkgs/main/osx-arm64::wheel-0.44.0-py39hca03da5_0 
+  xz                 pkgs/main/osx-arm64::xz-5.4.6-h80987f9_1 
+  zlib               pkgs/main/osx-arm64::zlib-1.2.13-h18a0788_1 
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate test
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(dsi_participant) felipebastos@Felipes-MacBook-Pro car-customer-prediction % conda deactivate
+(base) felipebastos@Felipes-MacBook-Pro car-customer-prediction % conda activate test
+(test) felipebastos@Felipes-MacBook-Pro car-customer-prediction % conda install --file conda_requirements.txt 
+Channels:
+ - defaults
+ - conda-forge
+Platform: osx-arm64
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+## Package Plan ##
+
+  environment location: /opt/miniconda3/envs/test
+
+  added / updated specs:
+    - absl-py==2.1.0=pyhd8ed1ab_0
+    - aiohappyeyeballs==2.3.6=pyhd8ed1ab_0
+    - aiohttp==3.10.3=py39hfea33bf_0
+    - aiosignal==1.3.1=pyhd8ed1ab_0
+    - aom==3.9.1=h7bae524_0
+    - appnope==0.1.4=pyhd8ed1ab_0
+    - asttokens==2.4.1=pyhd8ed1ab_0
+    - astunparse==1.6.3=pyhd8ed1ab_0
+    - async-timeout==4.0.3=pyhd8ed1ab_0
+    - attrs==24.2.0=pyh71513ae_0
+    - autograd==1.6.2=pyhd8ed1ab_0
+    - aws-c-auth==0.7.25=hd1432f0_6
+    - aws-c-cal==0.7.3=h85401af_2
+    - aws-c-common==0.9.27=h99b78c6_0
+    - aws-c-compression==0.2.18=h85401af_10
+    - aws-c-event-stream==0.4.2=h79ff00d_21
+    - aws-c-http==0.8.7=h1b11e57_4
+    - aws-c-io==0.14.18=ha1b8718_5
+    - aws-c-mqtt==0.10.4=h64da278_17
+    - aws-c-s3==0.6.4=h3f26dbc_8
+    - aws-c-sdkutils==0.1.19=h85401af_2
+    - aws-checksums==0.1.18=h85401af_10
+    - aws-crt-cpp==0.27.5=hddf5b2d_7
+    - aws-sdk-cpp==1.11.379=h0146acb_3
+    - azure-core-cpp==1.13.0=hd01fc5c_0
+    - azure-identity-cpp==1.8.0=h13ea094_2
+    - azure-storage-blobs-cpp==12.12.0=hfde595f_0
+    - azure-storage-common-cpp==12.7.0=hcf3b6fd_1
+    - azure-storage-files-datalake-cpp==12.11.0=h082e32e_1
+    - blas==1.0=openblas
+    - blosc==1.21.6=h5499902_0
+    - bokeh==3.4.2=pyhd8ed1ab_0
+    - brotli-bin==1.1.0=hb547adb_1
+    - brotli-python==1.1.0=py39hb198ff7_1
+    - brotli==1.1.0=hb547adb_1
+    - brunsli==0.1=h9f76cd9_0
+    - bzip2==1.0.8=h99b78c6_7
+    - c-ares==1.33.0=h99b78c6_0
+    - c-blosc2==2.15.1=h5063078_0
+    - ca-certificates==2024.12.31=hca03da5_0
+    - cached-property==1.5.2=hd8ed1ab_1
+    - cached_property==1.5.2=pyha770c72_1
+    - cairo==1.18.0=hb4a6bf7_3
+    - certifi==2024.12.14=py39hca03da5_0
+    - cffi==1.17.0=py39h210d88a_0
+    - charls==2.4.2=h13dd4ca_0
+    - charset-normalizer==3.3.2=pyhd8ed1ab_0
+    - clarabel==0.7.1=py39h7958472_0
+    - click==8.1.7=unix_pyh707e725_0
+    - cloudpickle==3.0.0=pyhd8ed1ab_0
+    - colorama==0.4.6=pyhd8ed1ab_0
+    - comm==0.2.2=pyhd8ed1ab_0
+    - contourpy==1.2.1=py39h48c5dd5_0
+    - cvxopt==1.3.2=py39hf9e8641_2
+    - cvxpy-base==1.5.2=py39h998126f_1
+    - cvxpy==1.5.2=py39hdf13c20_1
+    - cycler==0.12.1=pyhd8ed1ab_0
+    - cytoolz==0.12.3=py39h17cfd9d_0
+    - dask-core==2024.2.0=pyhd8ed1ab_0
+    - dask-expr==0.4.1=pyhd8ed1ab_0
+    - dask==2024.2.0=pyhd8ed1ab_0
+    - datasets==2.21.0=pyhd8ed1ab_0
+    - dav1d==1.2.1=hb547adb_0
+    - debugpy==1.8.5=py39hbf7db11_0
+    - decorator==5.1.1=pyhd8ed1ab_0
+    - dill==0.3.8=pyhd8ed1ab_0
+    - distributed==2024.2.0=pyhd8ed1ab_0
+    - docopt==0.6.2=py_1
+    - dsdp==5.8=h9397a75_1203
+    - ecos==2.0.14=py39h161d348_0
+    - exceptiongroup==1.2.2=pyhd8ed1ab_0
+    - executing==2.0.1=pyhd8ed1ab_0
+    - expat==2.6.2=hebf3989_0
+    - fancyimpute==0.7.0=pyhd8ed1ab_0
+    - ffmpeg==6.1.2=gpl_h2009a67_101
+    - fftw==3.3.10=nompi_h6637ab6_110
+    - filelock==3.15.4=pyhd8ed1ab_0
+    - flatbuffers==24.3.25=hebf3989_0
+    - font-ttf-dejavu-sans-mono==2.37=hab24e00_0
+    - font-ttf-inconsolata==3.000=h77eed37_0
+    - font-ttf-source-code-pro==2.038=h77eed37_0
+    - font-ttf-ubuntu==0.83=h77eed37_2
+    - fontconfig==2.14.2=h82840c6_0
+    - fonts-conda-ecosystem==1=0
+    - fonts-conda-forge==1=0
+    - fonttools==4.53.1=py39hfea33bf_0
+    - freetype==2.12.1=hadb7bae_2
+    - fribidi==1.0.10=h27ca646_0
+    - frozenlist==1.4.1=py39h17cfd9d_0
+    - fsspec==2024.5.0=pyhff2d567_0
+    - future==1.0.0=py39hca03da5_0
+    - gast==0.5.5=pyhd8ed1ab_0
+    - gettext-tools==0.22.5=h8414b35_3
+    - gettext==0.22.5=h8414b35_3
+    - gflags==2.2.2=hc88da5d_1004
+    - giflib==5.2.2=h93a5062_0
+    - gitdb==4.0.11=pyhd8ed1ab_0
+    - gitpython==3.1.43=pyhd8ed1ab_0
+    - glog==0.7.1=heb240a5_0
+    - glpk==5.0=h6d7a090_0
+    - gmp==6.3.0=h7bae524_2
+    - gnutls==3.8.7=h9df781c_0
+    - google-pasta==0.2.0=pyhd8ed1ab_1
+    - graphite2==1.3.13=hebf3989_1003
+    - greenlet==3.0.3=py39hf3050f2_0
+    - grpcio==1.62.2=py39h047a24b_0
+    - gsl==2.7=h6e638da_0
+    - h2==4.1.0=pyhd8ed1ab_0
+    - h5py==3.11.0=nompi_py39h534c8c8_102
+    - harfbuzz==9.0.0=h997cde5_1
+    - hdf5==1.14.3=nompi_hec07895_105
+    - hpack==4.0.0=pyh9f0ad1d_0
+    - huggingface_hub==0.24.5=pyhd8ed1ab_0
+    - hyperframe==6.0.1=pyhd8ed1ab_0
+    - icu==75.1=hfee45f7_0
+    - idna==3.7=pyhd8ed1ab_0
+    - imagecodecs==2024.6.1=py39hd4a6698_3
+    - imageio==2.34.2=pyh12aca89_0
+    - imath==3.1.11=h1059232_0
+    - importlib-metadata==8.2.0=pyha770c72_0
+    - importlib-resources==6.4.2=pyhd8ed1ab_0
+    - importlib_metadata==8.2.0=hd8ed1ab_0
+    - importlib_resources==6.4.2=pyhd8ed1ab_0
+    - iniconfig==2.0.0=pyhd8ed1ab_0
+    - ipykernel==6.29.5=pyh57ce528_0
+    - ipython==8.18.1=pyh707e725_3
+    - jasper==4.2.4=h6c4e4ef_0
+    - jedi==0.19.1=pyhd8ed1ab_0
+    - jinja2==3.1.4=pyhd8ed1ab_0
+    - joblib==1.4.2=pyhd8ed1ab_0
+    - jsonpickle==3.2.2=pyhd8ed1ab_0
+    - jsonschema-specifications==2023.12.1=pyhd8ed1ab_0
+    - jsonschema==4.23.0=pyhd8ed1ab_0
+    - jupyter_client==8.6.2=pyhd8ed1ab_0
+    - jupyter_core==5.7.2=py39h2804cbe_0
+    - jxrlib==1.1=h93a5062_3
+    - kiwisolver==1.4.5=py39hbd775c9_1
+    - knnimpute==0.1.0=pyhd8ed1ab_0
+    - krb5==1.21.3=h237132a_0
+    - lame==3.100=h1a8c8d9_1003
+    - lazy-loader==0.4=pyhd8ed1ab_1
+    - lazy_loader==0.4=pyhd8ed1ab_1
+    - lcms2==2.16=ha0e7c42_0
+    - lerc==4.0.0=h9a09cb3_0
+    - libabseil==20240116.2=cxx17_h00cdb27_1
+    - libaec==1.1.3=hebf3989_0
+    - libarrow-acero==17.0.0=hf9b8971_8_cpu
+    - libarrow-dataset==17.0.0=hf9b8971_8_cpu
+    - libarrow-substrait==17.0.0=hbf8b706_8_cpu
+    - libarrow==17.0.0=h009215e_8_cpu
+    - libasprintf-devel==0.22.5=h8414b35_3
+    - libasprintf==0.22.5=h8414b35_3
+    - libass==0.17.3=hf20b609_0
+    - libavif16==1.1.1=h9a910c9_0
+    - libblas==3.9.0=23_osxarm64_openblas
+    - libbrotlicommon==1.1.0=hb547adb_1
+    - libbrotlidec==1.1.0=hb547adb_1
+    - libbrotlienc==1.1.0=hb547adb_1
+    - libcblas==3.9.0=23_osxarm64_openblas
+    - libcrc32c==1.1.2=hbdafb3b_0
+    - libcurl==8.9.1=hfd8ffcc_0
+    - libcxx==18.1.8=h5a72898_4
+    - libdeflate==1.21=h99b78c6_0
+    - libedit==3.1.20191231=hc8eb9b7_2
+    - libev==4.33=h93a5062_2
+    - libevent==2.1.12=h2757513_1
+    - libexpat==2.6.2=hebf3989_0
+    - libffi==3.4.4=hca03da5_1
+    - libgettextpo-devel==0.22.5=h8414b35_3
+    - libgettextpo==0.22.5=h8414b35_3
+    - libgfortran5==13.2.0=hf226fd6_3
+    - libgfortran==5.0.0=13_2_0_hd922786_3
+    - libglib==2.80.3=h59d46d9_2
+    - libgoogle-cloud-storage==2.28.0=h1466eeb_0
+    - libgoogle-cloud==2.28.0=hfe08963_0
+    - libgrpc==1.62.2=h9c18a4f_0
+    - libhwloc==2.11.1=default_h7685b71_1000
+    - libhwy==1.1.0=h2ffa867_0
+    - libiconv==1.17=h0d3ecfb_2
+    - libidn2==2.3.7=h93a5062_0
+    - libintl-devel==0.22.5=h8414b35_3
+    - libintl==0.22.5=h8414b35_3
+    - libjpeg-turbo==3.0.0=hb547adb_1
+    - libjxl==0.10.3=h44ef4fb_0
+    - liblapack==3.9.0=23_osxarm64_openblas
+    - liblapacke==3.9.0=23_osxarm64_openblas
+    - libllvm14==14.0.6=hd1a9a77_4
+    - libnghttp2==1.58.0=ha4dd798_1
+    - libopenblas==0.3.27=openmp_h517c56d_1
+    - libopencv==4.10.0=headless_py39he935d7a_3
+    - libopenvino-arm-cpu-plugin==2024.3.0=h5c9529b_0
+    - libopenvino-auto-batch-plugin==2024.3.0=hcd65546_0
+    - libopenvino-auto-plugin==2024.3.0=hcd65546_0
+    - libopenvino-hetero-plugin==2024.3.0=h88cb26a_0
+    - libopenvino-ir-frontend==2024.3.0=h88cb26a_0
+    - libopenvino-onnx-frontend==2024.3.0=h32b5460_0
+    - libopenvino-paddle-frontend==2024.3.0=h32b5460_0
+    - libopenvino-pytorch-frontend==2024.3.0=h00cdb27_0
+    - libopenvino-tensorflow-frontend==2024.3.0=h2741c3b_0
+    - libopenvino-tensorflow-lite-frontend==2024.3.0=h00cdb27_0
+    - libopenvino==2024.3.0=h5c9529b_0
+    - libopus==1.3.1=h27ca646_1
+    - libosqp==0.6.3=h313beb8_0
+    - libparquet==17.0.0=hf0ba9ef_8_cpu
+    - libpng==1.6.43=h091b4b1_0
+    - libpq==16.4=h7afe498_0
+    - libprotobuf==4.25.3=hbfab5d5_0
+    - libqdldl==0.1.7=hb7217d7_0
+    - libre2-11==2023.09.01=h7b2c953_2
+    - libsodium==1.0.18=h27ca646_1
+    - libsqlite==3.46.0=hfb93653_0
+    - libssh2==1.11.0=h7a5bd25_0
+    - libtasn1==4.19.0=h1a8c8d9_0
+    - libthrift==0.20.0=h33edb3e_0
+    - libtiff==4.6.0=hf8409c0_4
+    - libunistring==0.9.10=h3422bc3_0
+    - libutf8proc==2.8.0=h1a8c8d9_0
+    - libvpx==1.14.1=h7bae524_0
+    - libwebp-base==1.4.0=h93a5062_0
+    - libxcb==1.16=hf2054a2_0
+    - libxml2==2.12.7=h01dff8b_4
+    - libzlib==1.3.1=hfb2fe0b_1
+    - libzopfli==1.0.3=h9f76cd9_0
+    - llvm-openmp==18.1.8=hde57baf_1
+    - llvmlite==0.43.0=py39hf770e8f_0
+    - locket==1.0.0=pyhd8ed1ab_0
+    - lz4-c==1.9.4=hb7217d7_0
+    - lz4==4.3.3=py39hf99b9d6_0
+    - markdown-it-py==3.0.0=pyhd8ed1ab_0
+    - markdown==3.6=pyhd8ed1ab_0
+    - markupsafe==2.1.5=py39h17cfd9d_0
+    - matplotlib-base==3.9.2=py39h1398496_0
+    - matplotlib-inline==0.1.7=pyhd8ed1ab_0
+    - matplotlib==3.9.2=py39hdf13c20_0
+    - mdurl==0.1.2=pyhd8ed1ab_0
+    - metis==5.1.0=h13dd4ca_1007
+    - missingno==0.5.2=pyhd8ed1ab_0
+    - mpfr==4.2.1=h1cfca0a_2
+    - msgpack-python==1.0.8=py39ha1e04a5_0
+    - multidict==6.0.5=py39h02fc5c5_0
+    - multiprocess==0.70.16=py39h17cfd9d_0
+    - munch==4.0.0=pyhd8ed1ab_0
+    - munkres==1.1.4=pyh9f0ad1d_0
+    - namex==0.0.8=pyhd8ed1ab_0
+    - nbformat==5.10.4=pyhd8ed1ab_0
+    - ncurses==6.5=hb89a1cb_0
+    - nest-asyncio==1.6.0=pyhd8ed1ab_0
+    - nettle==3.9.1=h40ed0f5_0
+    - networkx==3.2.1=pyhd8ed1ab_0
+    - nose==1.3.7=py_1006
+    - numba==0.60.0=py39h2d4ef1e_0
+    - numpy==1.26.4=py39h7aa2656_0
+    - opencv==4.10.0=headless_py39h38a9fee_3
+    - openexr==3.2.2=h2c51e1d_1
+    - openh264==2.4.1=hebf3989_0
+    - openjpeg==2.5.2=h9f1df11_0
+    - openssl==3.3.1=hfb2fe0b_2
+    - opt_einsum==3.3.0=pyhc1e730c_2
+    - optree==0.12.1=py39ha1e04a5_0
+    - orc==2.0.2=h75dedd0_0
+    - osqp==0.6.7.post0=py39h998126f_0
+    - p11-kit==0.24.1=h29577a5_0
+    - packaging==24.1=pyhd8ed1ab_0
+    - pandas==2.2.2=py39h998126f_1
+    - parso==0.8.4=pyhd8ed1ab_0
+    - partd==1.4.2=pyhd8ed1ab_0
+    - patsy==0.5.6=pyhd8ed1ab_0
+    - pcre2==10.44=h297a79d_2
+    - pexpect==4.9.0=pyhd8ed1ab_0
+    - pickleshare==0.7.5=py_1003
+    - pillow==10.4.0=py39h3baf582_0
+    - pip==24.2=py39hca03da5_0
+    - pixman==0.43.4=hebf3989_0
+    - pkgutil-resolve-name==1.3.10=pyhd8ed1ab_1
+    - platformdirs==4.2.2=pyhd8ed1ab_0
+    - plotly==5.23.0=pyhd8ed1ab_0
+    - pluggy==1.5.0=pyhd8ed1ab_0
+    - prompt-toolkit==3.0.47=pyha770c72_0
+    - protobuf==4.25.3=py39heca4154_0
+    - psutil==6.0.0=py39hfea33bf_0
+    - psycopg2==2.9.9=py39h78886fb_0
+    - pthread-stubs==0.4=h27ca646_1001
+    - ptyprocess==0.7.0=pyhd3deb0d_0
+    - pugixml==1.14=h13dd4ca_0
+    - pure_eval==0.2.3=pyhd8ed1ab_0
+    - py-cpuinfo==9.0.0=pyhd8ed1ab_0
+    - py-opencv==4.10.0=headless_py39hef12fc8_3
+    - pyarrow-core==17.0.0=py39ha397a34_1_cpu
+    - pyarrow-hotfix==0.6=pyhd8ed1ab_0
+    - pyarrow==17.0.0=py39h2beb185_1
+    - pybind11-abi==4=hd3eb1b0_1
+    - pycparser==2.22=pyhd8ed1ab_0
+    - pygments==2.18.0=pyhd8ed1ab_0
+    - pyparsing==3.1.2=pyhd8ed1ab_0
+    - pysocks==1.7.1=pyha2e5f31_6
+    - pytest==8.3.2=pyhd8ed1ab_0
+    - python-dateutil==2.9.0=pyhd8ed1ab_0
+    - python-dotenv==1.0.1=pyhd8ed1ab_0
+    - python-fastjsonschema==2.20.0=pyhd8ed1ab_0
+    - python-flatbuffers==24.3.25=pyh59ac667_0
+    - python-tzdata==2024.1=pyhd8ed1ab_0
+    - python-xxhash==3.4.1=py39h0f82c59_0
+    - python==3.9.19=hd7ebdb9_0_cpython
+    - python_abi==3.9=5_cp39
+    - pytz==2024.1=pyhd8ed1ab_0
+    - pywavelets==1.6.0=py39h161d348_0
+    - pyyaml==6.0.2=py39hfea33bf_0
+    - pyzmq==26.1.0=py39he7f0319_0
+    - qdldl-python==0.1.7.post4=py39h998126f_0
+    - qhull==2020.2=h420ef59_5
+    - rav1e==0.6.6=h69fbcac_2
+    - re2==2023.09.01=h4cba328_2
+    - readline==8.2=h1a28f6b_0
+    - referencing==0.35.1=pyhd8ed1ab_0
+    - regex==2024.7.24=py39hfea33bf_0
+    - requests==2.32.3=pyhd8ed1ab_0
+    - rich==13.7.1=pyhd8ed1ab_0
+    - rpds-py==0.20.0=py39h0019b8a_0
+    - sacred==0.8.5=pyhd8ed1ab_0
+    - safetensors==0.4.4=py39h0019b8a_0
+    - scikit-image==0.24.0=py39h998126f_2
+    - scikit-learn==1.5.1=py39h3c33c8b_0
+    - scs==3.2.6=default_py39hc134103_0
+    - seaborn-base==0.13.2=pyhd8ed1ab_2
+    - seaborn==0.13.2=hd8ed1ab_2
+    - setuptools==72.1.0=py39hca03da5_0
+    - shap==0.44.1=cpu_py39h53f2d1e_0
+    - six==1.16.0=pyh6c4a22f_0
+    - slicer==0.0.7=pyhd8ed1ab_0
+    - smmap==5.0.0=pyhd8ed1ab_0
+    - snappy==1.2.1=hd02b534_0
+    - sortedcontainers==2.4.0=pyhd8ed1ab_0
+    - sqlalchemy==2.0.27=py39h17cfd9d_0
+    - sqlite==3.46.0=h5838104_0
+    - stack_data==0.6.2=pyhd8ed1ab_0
+    - statsmodels==0.14.2=py39h161d348_0
+    - suitesparse==7.8.1=hf6fcff2_0
+    - svt-av1==2.1.2=h7bae524_0
+    - tbb==2021.12.0=h420ef59_3
+    - tblib==3.0.0=pyhd8ed1ab_0
+    - tenacity==9.0.0=pyhd8ed1ab_0
+    - tensorboard-data-server==0.7.0=py39had97604_1
+    - tensorflow-estimator==2.17.0=cpu_py39h9ff499c_0
+    - termcolor==2.4.0=pyhd8ed1ab_0
+    - threadpoolctl==3.5.0=pyhc1e730c_0
+    - tifffile==2024.6.18=pyhd8ed1ab_0
+    - tk==8.6.13=h5083fa2_1
+    - tokenizers==0.19.1=py39heb7857c_0
+    - tomli==2.0.1=pyhd8ed1ab_0
+    - toolz==0.12.1=pyhd8ed1ab_0
+    - tornado==6.4.1=py39hfea33bf_0
+    - tqdm==4.66.5=pyhd8ed1ab_0
+    - traitlets==5.14.3=pyhd8ed1ab_0
+    - transformers==4.44.0=pyhd8ed1ab_0
+    - typing-extensions==4.12.2=hd8ed1ab_0
+    - typing_extensions==4.12.2=pyha770c72_0
+    - tzdata==2024a=h04d1e81_0
+    - unicodedata2==15.1.0=py39h0f82c59_0
+    - urllib3==2.2.2=pyhd8ed1ab_1
+    - wcwidth==0.2.13=pyhd8ed1ab_0
+    - werkzeug==3.0.3=pyhd8ed1ab_0
+    - wheel==0.43.0=py39hca03da5_0
+    - wrapt==1.16.0=py39h17cfd9d_0
+    - x264==1!164.3095=h57fd34a_2
+    - x265==3.5=hbc6ce65_3
+    - xorg-libxau==1.0.11=hb547adb_0
+    - xorg-libxdmcp==1.1.3=h27ca646_0
+    - xxhash==0.8.2=hb547adb_0
+    - xyzservices==2024.6.0=pyhd8ed1ab_0
+    - xz==5.4.6=h80987f9_1
+    - yaml==0.2.5=h3422bc3_2
+    - yarl==1.9.4=py39h17cfd9d_0
+    - zeromq==4.3.5=hcc0f68c_4
+    - zfp==1.0.1=ha84d530_1
+    - zict==3.0.0=pyhd8ed1ab_0
+    - zipp==3.20.0=pyhd8ed1ab_0
+    - zlib-ng==2.2.1=h00cdb27_0
+    - zlib==1.3.1=hfb2fe0b_1
+    - zstandard==0.22.0=py39h0b77d07_1
+    - zstd==1.5.6=hb46c0d2_0
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    keras-3.6.0                |   py39hca03da5_0         2.3 MB
+    ml_dtypes-0.4.0            |   py39h46d7db6_0         141 KB
+    tensorboard-2.17.0         |   py39hca03da5_0         5.4 MB
+    ------------------------------------------------------------
+                                           Total:         7.9 MB
+
+The following NEW packages will be INSTALLED:
+
+  absl-py            conda-forge/noarch::absl-py-2.1.0-pyhd8ed1ab_0 
+  aiohappyeyeballs   conda-forge/noarch::aiohappyeyeballs-2.3.6-pyhd8ed1ab_0 
+  aiohttp            conda-forge/osx-arm64::aiohttp-3.10.3-py39hfea33bf_0 
+  aiosignal          conda-forge/noarch::aiosignal-1.3.1-pyhd8ed1ab_0 
+  aom                conda-forge/osx-arm64::aom-3.9.1-h7bae524_0 
+  appnope            conda-forge/noarch::appnope-0.1.4-pyhd8ed1ab_0 
+  asttokens          conda-forge/noarch::asttokens-2.4.1-pyhd8ed1ab_0 
+  astunparse         conda-forge/noarch::astunparse-1.6.3-pyhd8ed1ab_0 
+  async-timeout      conda-forge/noarch::async-timeout-4.0.3-pyhd8ed1ab_0 
+  attrs              conda-forge/noarch::attrs-24.2.0-pyh71513ae_0 
+  autograd           conda-forge/noarch::autograd-1.6.2-pyhd8ed1ab_0 
+  aws-c-auth         conda-forge/osx-arm64::aws-c-auth-0.7.25-hd1432f0_6 
+  aws-c-cal          conda-forge/osx-arm64::aws-c-cal-0.7.3-h85401af_2 
+  aws-c-common       conda-forge/osx-arm64::aws-c-common-0.9.27-h99b78c6_0 
+  aws-c-compression  conda-forge/osx-arm64::aws-c-compression-0.2.18-h85401af_10 
+  aws-c-event-stream conda-forge/osx-arm64::aws-c-event-stream-0.4.2-h79ff00d_21 
+  aws-c-http         conda-forge/osx-arm64::aws-c-http-0.8.7-h1b11e57_4 
+  aws-c-io           conda-forge/osx-arm64::aws-c-io-0.14.18-ha1b8718_5 
+  aws-c-mqtt         conda-forge/osx-arm64::aws-c-mqtt-0.10.4-h64da278_17 
+  aws-c-s3           conda-forge/osx-arm64::aws-c-s3-0.6.4-h3f26dbc_8 
+  aws-c-sdkutils     conda-forge/osx-arm64::aws-c-sdkutils-0.1.19-h85401af_2 
+  aws-checksums      conda-forge/osx-arm64::aws-checksums-0.1.18-h85401af_10 
+  aws-crt-cpp        conda-forge/osx-arm64::aws-crt-cpp-0.27.5-hddf5b2d_7 
+  aws-sdk-cpp        conda-forge/osx-arm64::aws-sdk-cpp-1.11.379-h0146acb_3 
+  azure-core-cpp     conda-forge/osx-arm64::azure-core-cpp-1.13.0-hd01fc5c_0 
+  azure-identity-cpp conda-forge/osx-arm64::azure-identity-cpp-1.8.0-h13ea094_2 
+  azure-storage-blo~ conda-forge/osx-arm64::azure-storage-blobs-cpp-12.12.0-hfde595f_0 
+  azure-storage-com~ conda-forge/osx-arm64::azure-storage-common-cpp-12.7.0-hcf3b6fd_1 
+  azure-storage-fil~ conda-forge/osx-arm64::azure-storage-files-datalake-cpp-12.11.0-h082e32e_1 
+  blas               pkgs/main/osx-arm64::blas-1.0-openblas 
+  blosc              conda-forge/osx-arm64::blosc-1.21.6-h5499902_0 
+  bokeh              conda-forge/noarch::bokeh-3.4.2-pyhd8ed1ab_0 
+  brotli             conda-forge/osx-arm64::brotli-1.1.0-hb547adb_1 
+  brotli-bin         conda-forge/osx-arm64::brotli-bin-1.1.0-hb547adb_1 
+  brotli-python      conda-forge/osx-arm64::brotli-python-1.1.0-py39hb198ff7_1 
+  brunsli            conda-forge/osx-arm64::brunsli-0.1-h9f76cd9_0 
+  bzip2              conda-forge/osx-arm64::bzip2-1.0.8-h99b78c6_7 
+  c-ares             conda-forge/osx-arm64::c-ares-1.33.0-h99b78c6_0 
+  c-blosc2           conda-forge/osx-arm64::c-blosc2-2.15.1-h5063078_0 
+  cached-property    conda-forge/noarch::cached-property-1.5.2-hd8ed1ab_1 
+  cached_property    conda-forge/noarch::cached_property-1.5.2-pyha770c72_1 
+  cairo              conda-forge/osx-arm64::cairo-1.18.0-hb4a6bf7_3 
+  certifi            pkgs/main/osx-arm64::certifi-2024.12.14-py39hca03da5_0 
+  cffi               conda-forge/osx-arm64::cffi-1.17.0-py39h210d88a_0 
+  charls             conda-forge/osx-arm64::charls-2.4.2-h13dd4ca_0 
+  charset-normalizer conda-forge/noarch::charset-normalizer-3.3.2-pyhd8ed1ab_0 
+  clarabel           conda-forge/osx-arm64::clarabel-0.7.1-py39h7958472_0 
+  click              conda-forge/noarch::click-8.1.7-unix_pyh707e725_0 
+  cloudpickle        conda-forge/noarch::cloudpickle-3.0.0-pyhd8ed1ab_0 
+  colorama           conda-forge/noarch::colorama-0.4.6-pyhd8ed1ab_0 
+  comm               conda-forge/noarch::comm-0.2.2-pyhd8ed1ab_0 
+  contourpy          conda-forge/osx-arm64::contourpy-1.2.1-py39h48c5dd5_0 
+  cvxopt             conda-forge/osx-arm64::cvxopt-1.3.2-py39hf9e8641_2 
+  cvxpy              conda-forge/osx-arm64::cvxpy-1.5.2-py39hdf13c20_1 
+  cvxpy-base         conda-forge/osx-arm64::cvxpy-base-1.5.2-py39h998126f_1 
+  cycler             conda-forge/noarch::cycler-0.12.1-pyhd8ed1ab_0 
+  cytoolz            conda-forge/osx-arm64::cytoolz-0.12.3-py39h17cfd9d_0 
+  dask               conda-forge/noarch::dask-2024.2.0-pyhd8ed1ab_0 
+  dask-core          conda-forge/noarch::dask-core-2024.2.0-pyhd8ed1ab_0 
+  dask-expr          conda-forge/noarch::dask-expr-0.4.1-pyhd8ed1ab_0 
+  datasets           conda-forge/noarch::datasets-2.21.0-pyhd8ed1ab_0 
+  dav1d              conda-forge/osx-arm64::dav1d-1.2.1-hb547adb_0 
+  debugpy            conda-forge/osx-arm64::debugpy-1.8.5-py39hbf7db11_0 
+  decorator          conda-forge/noarch::decorator-5.1.1-pyhd8ed1ab_0 
+  dill               conda-forge/noarch::dill-0.3.8-pyhd8ed1ab_0 
+  distributed        conda-forge/noarch::distributed-2024.2.0-pyhd8ed1ab_0 
+  docopt             conda-forge/noarch::docopt-0.6.2-py_1 
+  dsdp               conda-forge/osx-arm64::dsdp-5.8-h9397a75_1203 
+  ecos               conda-forge/osx-arm64::ecos-2.0.14-py39h161d348_0 
+  exceptiongroup     conda-forge/noarch::exceptiongroup-1.2.2-pyhd8ed1ab_0 
+  executing          conda-forge/noarch::executing-2.0.1-pyhd8ed1ab_0 
+  expat              conda-forge/osx-arm64::expat-2.6.2-hebf3989_0 
+  fancyimpute        conda-forge/noarch::fancyimpute-0.7.0-pyhd8ed1ab_0 
+  ffmpeg             conda-forge/osx-arm64::ffmpeg-6.1.2-gpl_h2009a67_101 
+  fftw               conda-forge/osx-arm64::fftw-3.3.10-nompi_h6637ab6_110 
+  filelock           conda-forge/noarch::filelock-3.15.4-pyhd8ed1ab_0 
+  flatbuffers        conda-forge/osx-arm64::flatbuffers-24.3.25-hebf3989_0 
+  font-ttf-dejavu-s~ conda-forge/noarch::font-ttf-dejavu-sans-mono-2.37-hab24e00_0 
+  font-ttf-inconsol~ conda-forge/noarch::font-ttf-inconsolata-3.000-h77eed37_0 
+  font-ttf-source-c~ conda-forge/noarch::font-ttf-source-code-pro-2.038-h77eed37_0 
+  font-ttf-ubuntu    conda-forge/noarch::font-ttf-ubuntu-0.83-h77eed37_2 
+  fontconfig         conda-forge/osx-arm64::fontconfig-2.14.2-h82840c6_0 
+  fonts-conda-ecosy~ conda-forge/noarch::fonts-conda-ecosystem-1-0 
+  fonts-conda-forge  conda-forge/noarch::fonts-conda-forge-1-0 
+  fonttools          conda-forge/osx-arm64::fonttools-4.53.1-py39hfea33bf_0 
+  freetype           conda-forge/osx-arm64::freetype-2.12.1-hadb7bae_2 
+  fribidi            conda-forge/osx-arm64::fribidi-1.0.10-h27ca646_0 
+  frozenlist         conda-forge/osx-arm64::frozenlist-1.4.1-py39h17cfd9d_0 
+  fsspec             conda-forge/noarch::fsspec-2024.5.0-pyhff2d567_0 
+  future             pkgs/main/osx-arm64::future-1.0.0-py39hca03da5_0 
+  gast               conda-forge/noarch::gast-0.5.5-pyhd8ed1ab_0 
+  gettext            conda-forge/osx-arm64::gettext-0.22.5-h8414b35_3 
+  gettext-tools      conda-forge/osx-arm64::gettext-tools-0.22.5-h8414b35_3 
+  gflags             conda-forge/osx-arm64::gflags-2.2.2-hc88da5d_1004 
+  giflib             conda-forge/osx-arm64::giflib-5.2.2-h93a5062_0 
+  gitdb              conda-forge/noarch::gitdb-4.0.11-pyhd8ed1ab_0 
+  gitpython          conda-forge/noarch::gitpython-3.1.43-pyhd8ed1ab_0 
+  glog               conda-forge/osx-arm64::glog-0.7.1-heb240a5_0 
+  glpk               conda-forge/osx-arm64::glpk-5.0-h6d7a090_0 
+  gmp                conda-forge/osx-arm64::gmp-6.3.0-h7bae524_2 
+  gnutls             conda-forge/osx-arm64::gnutls-3.8.7-h9df781c_0 
+  google-pasta       conda-forge/noarch::google-pasta-0.2.0-pyhd8ed1ab_1 
+  graphite2          conda-forge/osx-arm64::graphite2-1.3.13-hebf3989_1003 
+  greenlet           conda-forge/osx-arm64::greenlet-3.0.3-py39hf3050f2_0 
+  grpcio             conda-forge/osx-arm64::grpcio-1.62.2-py39h047a24b_0 
+  gsl                conda-forge/osx-arm64::gsl-2.7-h6e638da_0 
+  h2                 conda-forge/noarch::h2-4.1.0-pyhd8ed1ab_0 
+  h5py               conda-forge/osx-arm64::h5py-3.11.0-nompi_py39h534c8c8_102 
+  harfbuzz           conda-forge/osx-arm64::harfbuzz-9.0.0-h997cde5_1 
+  hdf5               conda-forge/osx-arm64::hdf5-1.14.3-nompi_hec07895_105 
+  hpack              conda-forge/noarch::hpack-4.0.0-pyh9f0ad1d_0 
+  huggingface_hub    conda-forge/noarch::huggingface_hub-0.24.5-pyhd8ed1ab_0 
+  hyperframe         conda-forge/noarch::hyperframe-6.0.1-pyhd8ed1ab_0 
+  icu                conda-forge/osx-arm64::icu-75.1-hfee45f7_0 
+  idna               conda-forge/noarch::idna-3.7-pyhd8ed1ab_0 
+  imagecodecs        conda-forge/osx-arm64::imagecodecs-2024.6.1-py39hd4a6698_3 
+  imageio            conda-forge/noarch::imageio-2.34.2-pyh12aca89_0 
+  imath              conda-forge/osx-arm64::imath-3.1.11-h1059232_0 
+  importlib-metadata conda-forge/noarch::importlib-metadata-8.2.0-pyha770c72_0 
+  importlib-resourc~ conda-forge/noarch::importlib-resources-6.4.2-pyhd8ed1ab_0 
+  importlib_metadata conda-forge/noarch::importlib_metadata-8.2.0-hd8ed1ab_0 
+  importlib_resourc~ conda-forge/noarch::importlib_resources-6.4.2-pyhd8ed1ab_0 
+  iniconfig          conda-forge/noarch::iniconfig-2.0.0-pyhd8ed1ab_0 
+  ipykernel          conda-forge/noarch::ipykernel-6.29.5-pyh57ce528_0 
+  ipython            conda-forge/noarch::ipython-8.18.1-pyh707e725_3 
+  jasper             conda-forge/osx-arm64::jasper-4.2.4-h6c4e4ef_0 
+  jedi               conda-forge/noarch::jedi-0.19.1-pyhd8ed1ab_0 
+  jinja2             conda-forge/noarch::jinja2-3.1.4-pyhd8ed1ab_0 
+  joblib             conda-forge/noarch::joblib-1.4.2-pyhd8ed1ab_0 
+  jsonpickle         conda-forge/noarch::jsonpickle-3.2.2-pyhd8ed1ab_0 
+  jsonschema         conda-forge/noarch::jsonschema-4.23.0-pyhd8ed1ab_0 
+  jsonschema-specif~ conda-forge/noarch::jsonschema-specifications-2023.12.1-pyhd8ed1ab_0 
+  jupyter_client     conda-forge/noarch::jupyter_client-8.6.2-pyhd8ed1ab_0 
+  jupyter_core       conda-forge/osx-arm64::jupyter_core-5.7.2-py39h2804cbe_0 
+  jxrlib             conda-forge/osx-arm64::jxrlib-1.1-h93a5062_3 
+  keras              pkgs/main/osx-arm64::keras-3.6.0-py39hca03da5_0 
+  kiwisolver         conda-forge/osx-arm64::kiwisolver-1.4.5-py39hbd775c9_1 
+  knnimpute          conda-forge/noarch::knnimpute-0.1.0-pyhd8ed1ab_0 
+  krb5               conda-forge/osx-arm64::krb5-1.21.3-h237132a_0 
+  lame               conda-forge/osx-arm64::lame-3.100-h1a8c8d9_1003 
+  lazy-loader        conda-forge/noarch::lazy-loader-0.4-pyhd8ed1ab_1 
+  lazy_loader        conda-forge/noarch::lazy_loader-0.4-pyhd8ed1ab_1 
+  lcms2              conda-forge/osx-arm64::lcms2-2.16-ha0e7c42_0 
+  lerc               conda-forge/osx-arm64::lerc-4.0.0-h9a09cb3_0 
+  libabseil          conda-forge/osx-arm64::libabseil-20240116.2-cxx17_h00cdb27_1 
+  libaec             conda-forge/osx-arm64::libaec-1.1.3-hebf3989_0 
+  libarrow           conda-forge/osx-arm64::libarrow-17.0.0-h009215e_8_cpu 
+  libarrow-acero     conda-forge/osx-arm64::libarrow-acero-17.0.0-hf9b8971_8_cpu 
+  libarrow-dataset   conda-forge/osx-arm64::libarrow-dataset-17.0.0-hf9b8971_8_cpu 
+  libarrow-substrait conda-forge/osx-arm64::libarrow-substrait-17.0.0-hbf8b706_8_cpu 
+  libasprintf        conda-forge/osx-arm64::libasprintf-0.22.5-h8414b35_3 
+  libasprintf-devel  conda-forge/osx-arm64::libasprintf-devel-0.22.5-h8414b35_3 
+  libass             conda-forge/osx-arm64::libass-0.17.3-hf20b609_0 
+  libavif16          conda-forge/osx-arm64::libavif16-1.1.1-h9a910c9_0 
+  libblas            conda-forge/osx-arm64::libblas-3.9.0-23_osxarm64_openblas 
+  libbrotlicommon    conda-forge/osx-arm64::libbrotlicommon-1.1.0-hb547adb_1 
+  libbrotlidec       conda-forge/osx-arm64::libbrotlidec-1.1.0-hb547adb_1 
+  libbrotlienc       conda-forge/osx-arm64::libbrotlienc-1.1.0-hb547adb_1 
+  libcblas           conda-forge/osx-arm64::libcblas-3.9.0-23_osxarm64_openblas 
+  libcrc32c          conda-forge/osx-arm64::libcrc32c-1.1.2-hbdafb3b_0 
+  libcurl            conda-forge/osx-arm64::libcurl-8.9.1-hfd8ffcc_0 
+  libdeflate         conda-forge/osx-arm64::libdeflate-1.21-h99b78c6_0 
+  libedit            conda-forge/osx-arm64::libedit-3.1.20191231-hc8eb9b7_2 
+  libev              conda-forge/osx-arm64::libev-4.33-h93a5062_2 
+  libevent           conda-forge/osx-arm64::libevent-2.1.12-h2757513_1 
+  libexpat           conda-forge/osx-arm64::libexpat-2.6.2-hebf3989_0 
+  libgettextpo       conda-forge/osx-arm64::libgettextpo-0.22.5-h8414b35_3 
+  libgettextpo-devel conda-forge/osx-arm64::libgettextpo-devel-0.22.5-h8414b35_3 
+  libgfortran        conda-forge/osx-arm64::libgfortran-5.0.0-13_2_0_hd922786_3 
+  libgfortran5       conda-forge/osx-arm64::libgfortran5-13.2.0-hf226fd6_3 
+  libglib            conda-forge/osx-arm64::libglib-2.80.3-h59d46d9_2 
+  libgoogle-cloud    conda-forge/osx-arm64::libgoogle-cloud-2.28.0-hfe08963_0 
+  libgoogle-cloud-s~ conda-forge/osx-arm64::libgoogle-cloud-storage-2.28.0-h1466eeb_0 
+  libgrpc            conda-forge/osx-arm64::libgrpc-1.62.2-h9c18a4f_0 
+  libhwloc           conda-forge/osx-arm64::libhwloc-2.11.1-default_h7685b71_1000 
+  libhwy             conda-forge/osx-arm64::libhwy-1.1.0-h2ffa867_0 
+  libiconv           conda-forge/osx-arm64::libiconv-1.17-h0d3ecfb_2 
+  libidn2            conda-forge/osx-arm64::libidn2-2.3.7-h93a5062_0 
+  libintl            conda-forge/osx-arm64::libintl-0.22.5-h8414b35_3 
+  libintl-devel      conda-forge/osx-arm64::libintl-devel-0.22.5-h8414b35_3 
+  libjpeg-turbo      conda-forge/osx-arm64::libjpeg-turbo-3.0.0-hb547adb_1 
+  libjxl             conda-forge/osx-arm64::libjxl-0.10.3-h44ef4fb_0 
+  liblapack          conda-forge/osx-arm64::liblapack-3.9.0-23_osxarm64_openblas 
+  liblapacke         conda-forge/osx-arm64::liblapacke-3.9.0-23_osxarm64_openblas 
+  libllvm14          conda-forge/osx-arm64::libllvm14-14.0.6-hd1a9a77_4 
+  libnghttp2         conda-forge/osx-arm64::libnghttp2-1.58.0-ha4dd798_1 
+  libopenblas        conda-forge/osx-arm64::libopenblas-0.3.27-openmp_h517c56d_1 
+  libopencv          conda-forge/osx-arm64::libopencv-4.10.0-headless_py39he935d7a_3 
+  libopenvino        conda-forge/osx-arm64::libopenvino-2024.3.0-h5c9529b_0 
+  libopenvino-arm-c~ conda-forge/osx-arm64::libopenvino-arm-cpu-plugin-2024.3.0-h5c9529b_0 
+  libopenvino-auto-~ conda-forge/osx-arm64::libopenvino-auto-batch-plugin-2024.3.0-hcd65546_0 
+  libopenvino-auto-~ conda-forge/osx-arm64::libopenvino-auto-plugin-2024.3.0-hcd65546_0 
+  libopenvino-heter~ conda-forge/osx-arm64::libopenvino-hetero-plugin-2024.3.0-h88cb26a_0 
+  libopenvino-ir-fr~ conda-forge/osx-arm64::libopenvino-ir-frontend-2024.3.0-h88cb26a_0 
+  libopenvino-onnx-~ conda-forge/osx-arm64::libopenvino-onnx-frontend-2024.3.0-h32b5460_0 
+  libopenvino-paddl~ conda-forge/osx-arm64::libopenvino-paddle-frontend-2024.3.0-h32b5460_0 
+  libopenvino-pytor~ conda-forge/osx-arm64::libopenvino-pytorch-frontend-2024.3.0-h00cdb27_0 
+  libopenvino-tenso~ conda-forge/osx-arm64::libopenvino-tensorflow-frontend-2024.3.0-h2741c3b_0 
+  libopenvino-tenso~ conda-forge/osx-arm64::libopenvino-tensorflow-lite-frontend-2024.3.0-h00cdb27_0 
+  libopus            conda-forge/osx-arm64::libopus-1.3.1-h27ca646_1 
+  libosqp            pkgs/main/osx-arm64::libosqp-0.6.3-h313beb8_0 
+  libparquet         conda-forge/osx-arm64::libparquet-17.0.0-hf0ba9ef_8_cpu 
+  libpng             conda-forge/osx-arm64::libpng-1.6.43-h091b4b1_0 
+  libpq              conda-forge/osx-arm64::libpq-16.4-h7afe498_0 
+  libprotobuf        conda-forge/osx-arm64::libprotobuf-4.25.3-hbfab5d5_0 
+  libqdldl           conda-forge/osx-arm64::libqdldl-0.1.7-hb7217d7_0 
+  libre2-11          conda-forge/osx-arm64::libre2-11-2023.09.01-h7b2c953_2 
+  libsodium          conda-forge/osx-arm64::libsodium-1.0.18-h27ca646_1 
+  libsqlite          conda-forge/osx-arm64::libsqlite-3.46.0-hfb93653_0 
+  libssh2            conda-forge/osx-arm64::libssh2-1.11.0-h7a5bd25_0 
+  libtasn1           conda-forge/osx-arm64::libtasn1-4.19.0-h1a8c8d9_0 
+  libthrift          conda-forge/osx-arm64::libthrift-0.20.0-h33edb3e_0 
+  libtiff            conda-forge/osx-arm64::libtiff-4.6.0-hf8409c0_4 
+  libunistring       conda-forge/osx-arm64::libunistring-0.9.10-h3422bc3_0 
+  libutf8proc        conda-forge/osx-arm64::libutf8proc-2.8.0-h1a8c8d9_0 
+  libvpx             conda-forge/osx-arm64::libvpx-1.14.1-h7bae524_0 
+  libwebp-base       conda-forge/osx-arm64::libwebp-base-1.4.0-h93a5062_0 
+  libxcb             conda-forge/osx-arm64::libxcb-1.16-hf2054a2_0 
+  libxml2            conda-forge/osx-arm64::libxml2-2.12.7-h01dff8b_4 
+  libzlib            conda-forge/osx-arm64::libzlib-1.3.1-hfb2fe0b_1 
+  libzopfli          conda-forge/osx-arm64::libzopfli-1.0.3-h9f76cd9_0 
+  llvm-openmp        conda-forge/osx-arm64::llvm-openmp-18.1.8-hde57baf_1 
+  llvmlite           conda-forge/osx-arm64::llvmlite-0.43.0-py39hf770e8f_0 
+  locket             conda-forge/noarch::locket-1.0.0-pyhd8ed1ab_0 
+  lz4                conda-forge/osx-arm64::lz4-4.3.3-py39hf99b9d6_0 
+  lz4-c              conda-forge/osx-arm64::lz4-c-1.9.4-hb7217d7_0 
+  markdown           conda-forge/noarch::markdown-3.6-pyhd8ed1ab_0 
+  markdown-it-py     conda-forge/noarch::markdown-it-py-3.0.0-pyhd8ed1ab_0 
+  markupsafe         conda-forge/osx-arm64::markupsafe-2.1.5-py39h17cfd9d_0 
+  matplotlib         conda-forge/osx-arm64::matplotlib-3.9.2-py39hdf13c20_0 
+  matplotlib-base    conda-forge/osx-arm64::matplotlib-base-3.9.2-py39h1398496_0 
+  matplotlib-inline  conda-forge/noarch::matplotlib-inline-0.1.7-pyhd8ed1ab_0 
+  mdurl              conda-forge/noarch::mdurl-0.1.2-pyhd8ed1ab_0 
+  metis              conda-forge/osx-arm64::metis-5.1.0-h13dd4ca_1007 
+  missingno          conda-forge/noarch::missingno-0.5.2-pyhd8ed1ab_0 
+  ml_dtypes          pkgs/main/osx-arm64::ml_dtypes-0.4.0-py39h46d7db6_0 
+  mpfr               conda-forge/osx-arm64::mpfr-4.2.1-h1cfca0a_2 
+  msgpack-python     conda-forge/osx-arm64::msgpack-python-1.0.8-py39ha1e04a5_0 
+  multidict          conda-forge/osx-arm64::multidict-6.0.5-py39h02fc5c5_0 
+  multiprocess       conda-forge/osx-arm64::multiprocess-0.70.16-py39h17cfd9d_0 
+  munch              conda-forge/noarch::munch-4.0.0-pyhd8ed1ab_0 
+  munkres            conda-forge/noarch::munkres-1.1.4-pyh9f0ad1d_0 
+  namex              conda-forge/noarch::namex-0.0.8-pyhd8ed1ab_0 
+  nbformat           conda-forge/noarch::nbformat-5.10.4-pyhd8ed1ab_0 
+  nest-asyncio       conda-forge/noarch::nest-asyncio-1.6.0-pyhd8ed1ab_0 
+  nettle             conda-forge/osx-arm64::nettle-3.9.1-h40ed0f5_0 
+  networkx           conda-forge/noarch::networkx-3.2.1-pyhd8ed1ab_0 
+  nose               conda-forge/noarch::nose-1.3.7-py_1006 
+  numba              conda-forge/osx-arm64::numba-0.60.0-py39h2d4ef1e_0 
+  numpy              conda-forge/osx-arm64::numpy-1.26.4-py39h7aa2656_0 
+  opencv             conda-forge/osx-arm64::opencv-4.10.0-headless_py39h38a9fee_3 
+  openexr            conda-forge/osx-arm64::openexr-3.2.2-h2c51e1d_1 
+  openh264           conda-forge/osx-arm64::openh264-2.4.1-hebf3989_0 
+  openjpeg           conda-forge/osx-arm64::openjpeg-2.5.2-h9f1df11_0 
+  opt_einsum         conda-forge/noarch::opt_einsum-3.3.0-pyhc1e730c_2 
+  optree             conda-forge/osx-arm64::optree-0.12.1-py39ha1e04a5_0 
+  orc                conda-forge/osx-arm64::orc-2.0.2-h75dedd0_0 
+  osqp               conda-forge/osx-arm64::osqp-0.6.7.post0-py39h998126f_0 
+  p11-kit            conda-forge/osx-arm64::p11-kit-0.24.1-h29577a5_0 
+  packaging          conda-forge/noarch::packaging-24.1-pyhd8ed1ab_0 
+  pandas             conda-forge/osx-arm64::pandas-2.2.2-py39h998126f_1 
+  parso              conda-forge/noarch::parso-0.8.4-pyhd8ed1ab_0 
+  partd              conda-forge/noarch::partd-1.4.2-pyhd8ed1ab_0 
+  patsy              conda-forge/noarch::patsy-0.5.6-pyhd8ed1ab_0 
+  pcre2              conda-forge/osx-arm64::pcre2-10.44-h297a79d_2 
+  pexpect            conda-forge/noarch::pexpect-4.9.0-pyhd8ed1ab_0 
+  pickleshare        conda-forge/noarch::pickleshare-0.7.5-py_1003 
+  pillow             conda-forge/osx-arm64::pillow-10.4.0-py39h3baf582_0 
+  pixman             conda-forge/osx-arm64::pixman-0.43.4-hebf3989_0 
+  pkgutil-resolve-n~ conda-forge/noarch::pkgutil-resolve-name-1.3.10-pyhd8ed1ab_1 
+  platformdirs       conda-forge/noarch::platformdirs-4.2.2-pyhd8ed1ab_0 
+  plotly             conda-forge/noarch::plotly-5.23.0-pyhd8ed1ab_0 
+  pluggy             conda-forge/noarch::pluggy-1.5.0-pyhd8ed1ab_0 
+  prompt-toolkit     conda-forge/noarch::prompt-toolkit-3.0.47-pyha770c72_0 
+  protobuf           conda-forge/osx-arm64::protobuf-4.25.3-py39heca4154_0 
+  psutil             conda-forge/osx-arm64::psutil-6.0.0-py39hfea33bf_0 
+  psycopg2           conda-forge/osx-arm64::psycopg2-2.9.9-py39h78886fb_0 
+  pthread-stubs      conda-forge/osx-arm64::pthread-stubs-0.4-h27ca646_1001 
+  ptyprocess         conda-forge/noarch::ptyprocess-0.7.0-pyhd3deb0d_0 
+  pugixml            conda-forge/osx-arm64::pugixml-1.14-h13dd4ca_0 
+  pure_eval          conda-forge/noarch::pure_eval-0.2.3-pyhd8ed1ab_0 
+  py-cpuinfo         conda-forge/noarch::py-cpuinfo-9.0.0-pyhd8ed1ab_0 
+  py-opencv          conda-forge/osx-arm64::py-opencv-4.10.0-headless_py39hef12fc8_3 
+  pyarrow            conda-forge/osx-arm64::pyarrow-17.0.0-py39h2beb185_1 
+  pyarrow-core       conda-forge/osx-arm64::pyarrow-core-17.0.0-py39ha397a34_1_cpu 
+  pyarrow-hotfix     conda-forge/noarch::pyarrow-hotfix-0.6-pyhd8ed1ab_0 
+  pybind11-abi       pkgs/main/noarch::pybind11-abi-4-hd3eb1b0_1 
+  pycparser          conda-forge/noarch::pycparser-2.22-pyhd8ed1ab_0 
+  pygments           conda-forge/noarch::pygments-2.18.0-pyhd8ed1ab_0 
+  pyparsing          conda-forge/noarch::pyparsing-3.1.2-pyhd8ed1ab_0 
+  pysocks            conda-forge/noarch::pysocks-1.7.1-pyha2e5f31_6 
+  pytest             conda-forge/noarch::pytest-8.3.2-pyhd8ed1ab_0 
+  python-dateutil    conda-forge/noarch::python-dateutil-2.9.0-pyhd8ed1ab_0 
+  python-dotenv      conda-forge/noarch::python-dotenv-1.0.1-pyhd8ed1ab_0 
+  python-fastjsonsc~ conda-forge/noarch::python-fastjsonschema-2.20.0-pyhd8ed1ab_0 
+  python-flatbuffers conda-forge/noarch::python-flatbuffers-24.3.25-pyh59ac667_0 
+  python-tzdata      conda-forge/noarch::python-tzdata-2024.1-pyhd8ed1ab_0 
+  python-xxhash      conda-forge/osx-arm64::python-xxhash-3.4.1-py39h0f82c59_0 
+  python_abi         conda-forge/osx-arm64::python_abi-3.9-5_cp39 
+  pytz               conda-forge/noarch::pytz-2024.1-pyhd8ed1ab_0 
+  pywavelets         conda-forge/osx-arm64::pywavelets-1.6.0-py39h161d348_0 
+  pyyaml             conda-forge/osx-arm64::pyyaml-6.0.2-py39hfea33bf_0 
+  pyzmq              conda-forge/osx-arm64::pyzmq-26.1.0-py39he7f0319_0 
+  qdldl-python       conda-forge/osx-arm64::qdldl-python-0.1.7.post4-py39h998126f_0 
+  qhull              conda-forge/osx-arm64::qhull-2020.2-h420ef59_5 
+  rav1e              conda-forge/osx-arm64::rav1e-0.6.6-h69fbcac_2 
+  re2                conda-forge/osx-arm64::re2-2023.09.01-h4cba328_2 
+  referencing        conda-forge/noarch::referencing-0.35.1-pyhd8ed1ab_0 
+  regex              conda-forge/osx-arm64::regex-2024.7.24-py39hfea33bf_0 
+  requests           conda-forge/noarch::requests-2.32.3-pyhd8ed1ab_0 
+  rich               conda-forge/noarch::rich-13.7.1-pyhd8ed1ab_0 
+  rpds-py            conda-forge/osx-arm64::rpds-py-0.20.0-py39h0019b8a_0 
+  sacred             conda-forge/noarch::sacred-0.8.5-pyhd8ed1ab_0 
+  safetensors        conda-forge/osx-arm64::safetensors-0.4.4-py39h0019b8a_0 
+  scikit-image       conda-forge/osx-arm64::scikit-image-0.24.0-py39h998126f_2 
+  scikit-learn       conda-forge/osx-arm64::scikit-learn-1.5.1-py39h3c33c8b_0 
+  scipy              pkgs/main/osx-arm64::scipy-1.13.1-py39hd336fd7_1 
+  scs                conda-forge/osx-arm64::scs-3.2.6-default_py39hc134103_0 
+  seaborn            conda-forge/noarch::seaborn-0.13.2-hd8ed1ab_2 
+  seaborn-base       conda-forge/noarch::seaborn-base-0.13.2-pyhd8ed1ab_2 
+  shap               conda-forge/osx-arm64::shap-0.44.1-cpu_py39h53f2d1e_0 
+  six                conda-forge/noarch::six-1.16.0-pyh6c4a22f_0 
+  slicer             conda-forge/noarch::slicer-0.0.7-pyhd8ed1ab_0 
+  smmap              conda-forge/noarch::smmap-5.0.0-pyhd8ed1ab_0 
+  snappy             conda-forge/osx-arm64::snappy-1.2.1-hd02b534_0 
+  sortedcontainers   conda-forge/noarch::sortedcontainers-2.4.0-pyhd8ed1ab_0 
+  sqlalchemy         conda-forge/osx-arm64::sqlalchemy-2.0.27-py39h17cfd9d_0 
+  stack_data         conda-forge/noarch::stack_data-0.6.2-pyhd8ed1ab_0 
+  statsmodels        conda-forge/osx-arm64::statsmodels-0.14.2-py39h161d348_0 
+  suitesparse        conda-forge/osx-arm64::suitesparse-7.8.1-hf6fcff2_0 
+  svt-av1            conda-forge/osx-arm64::svt-av1-2.1.2-h7bae524_0 
+  tbb                conda-forge/osx-arm64::tbb-2021.12.0-h420ef59_3 
+  tblib              conda-forge/noarch::tblib-3.0.0-pyhd8ed1ab_0 
+  tenacity           conda-forge/noarch::tenacity-9.0.0-pyhd8ed1ab_0 
+  tensorboard        pkgs/main/osx-arm64::tensorboard-2.17.0-py39hca03da5_0 
+  tensorboard-data-~ conda-forge/osx-arm64::tensorboard-data-server-0.7.0-py39had97604_1 
+  tensorflow-base    conda-forge/osx-arm64::tensorflow-base-2.17.0-cpu_py39h0c1ebbd_0 
+  tensorflow-estima~ conda-forge/osx-arm64::tensorflow-estimator-2.17.0-cpu_py39h9ff499c_0 
+  termcolor          conda-forge/noarch::termcolor-2.4.0-pyhd8ed1ab_0 
+  threadpoolctl      conda-forge/noarch::threadpoolctl-3.5.0-pyhc1e730c_0 
+  tifffile           conda-forge/noarch::tifffile-2024.6.18-pyhd8ed1ab_0 
+  tokenizers         conda-forge/osx-arm64::tokenizers-0.19.1-py39heb7857c_0 
+  tomli              conda-forge/noarch::tomli-2.0.1-pyhd8ed1ab_0 
+  toolz              conda-forge/noarch::toolz-0.12.1-pyhd8ed1ab_0 
+  tornado            conda-forge/osx-arm64::tornado-6.4.1-py39hfea33bf_0 
+  tqdm               conda-forge/noarch::tqdm-4.66.5-pyhd8ed1ab_0 
+  traitlets          conda-forge/noarch::traitlets-5.14.3-pyhd8ed1ab_0 
+  transformers       conda-forge/noarch::transformers-4.44.0-pyhd8ed1ab_0 
+  typing-extensions  conda-forge/noarch::typing-extensions-4.12.2-hd8ed1ab_0 
+  typing_extensions  conda-forge/noarch::typing_extensions-4.12.2-pyha770c72_0 
+  unicodedata2       conda-forge/osx-arm64::unicodedata2-15.1.0-py39h0f82c59_0 
+  urllib3            conda-forge/noarch::urllib3-2.2.2-pyhd8ed1ab_1 
+  wcwidth            conda-forge/noarch::wcwidth-0.2.13-pyhd8ed1ab_0 
+  werkzeug           conda-forge/noarch::werkzeug-3.0.3-pyhd8ed1ab_0 
+  wrapt              conda-forge/osx-arm64::wrapt-1.16.0-py39h17cfd9d_0 
+  x264               conda-forge/osx-arm64::x264-1!164.3095-h57fd34a_2 
+  x265               conda-forge/osx-arm64::x265-3.5-hbc6ce65_3 
+  xorg-libxau        conda-forge/osx-arm64::xorg-libxau-1.0.11-hb547adb_0 
+  xorg-libxdmcp      conda-forge/osx-arm64::xorg-libxdmcp-1.1.3-h27ca646_0 
+  xxhash             conda-forge/osx-arm64::xxhash-0.8.2-hb547adb_0 
+  xyzservices        conda-forge/noarch::xyzservices-2024.6.0-pyhd8ed1ab_0 
+  yaml               conda-forge/osx-arm64::yaml-0.2.5-h3422bc3_2 
+  yarl               conda-forge/osx-arm64::yarl-1.9.4-py39h17cfd9d_0 
+  zeromq             conda-forge/osx-arm64::zeromq-4.3.5-hcc0f68c_4 
+  zfp                conda-forge/osx-arm64::zfp-1.0.1-ha84d530_1 
+  zict               conda-forge/noarch::zict-3.0.0-pyhd8ed1ab_0 
+  zipp               conda-forge/noarch::zipp-3.20.0-pyhd8ed1ab_0 
+  zlib-ng            conda-forge/osx-arm64::zlib-ng-2.2.1-h00cdb27_0 
+  zstandard          conda-forge/osx-arm64::zstandard-0.22.0-py39h0b77d07_1 
+  zstd               conda-forge/osx-arm64::zstd-1.5.6-hb46c0d2_0 
+
+The following packages will be UPDATED:
+
+  libcxx                pkgs/main::libcxx-14.0.6-h848a8c0_0 --> conda-forge::libcxx-18.1.8-h5a72898_4 
+  ncurses                 pkgs/main::ncurses-6.4-h313beb8_0 --> conda-forge::ncurses-6.5-hb89a1cb_0 
+  openssl              pkgs/main::openssl-3.0.15-h80987f9_0 --> conda-forge::openssl-3.3.1-hfb2fe0b_2 
+  sqlite                pkgs/main::sqlite-3.45.3-h80987f9_0 --> conda-forge::sqlite-3.46.0-h5838104_0 
+  zlib                    pkgs/main::zlib-1.2.13-h18a0788_1 --> conda-forge::zlib-1.3.1-hfb2fe0b_1 
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  python                pkgs/main::python-3.9.19-hb885b13_1 --> conda-forge::python-3.9.19-hd7ebdb9_0_cpython 
+  tk                        pkgs/main::tk-8.6.14-h6ba3021_0 --> conda-forge::tk-8.6.13-h5083fa2_1 
+
+The following packages will be DOWNGRADED:
+
+  setuptools                          75.1.0-py39hca03da5_0 --> 72.1.0-py39hca03da5_0 
+  tzdata                                   2024b-h04d1e81_0 --> 2024a-h04d1e81_0 
+  wheel                               0.44.0-py39hca03da5_0 --> 0.43.0-py39hca03da5_0 
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+                                                                                                                                                                                                            
+Preparing transaction: done                                                                                                                                                                                 
+Verifying transaction: done                                                                                                                                                                                 
+Executing transaction: done
+(test) felipebastos@Felipes-MacBook-Pro car-customer-prediction % pip install -r pip_requirements.txt         
+
+Collecting autograd-gamma==0.5.0 (from -r pip_requirements.txt (line 1))
+  Using cached autograd_gamma-0.5.0-py3-none-any.whl
+Collecting av==14.0.1 (from -r pip_requirements.txt (line 2))
+  Using cached av-14.0.1-cp39-cp39-macosx_11_0_arm64.whl.metadata (4.5 kB)
+Collecting beautifulsoup4==4.12.3 (from -r pip_requirements.txt (line 3))
+  Using cached beautifulsoup4-4.12.3-py3-none-any.whl.metadata (3.8 kB)
+Collecting datamanager==0.2.2 (from -r pip_requirements.txt (line 4))
+  Using cached dataManager-0.2.2-py3-none-any.whl.metadata (2.9 kB)
+Collecting islp==0.4.0 (from -r pip_requirements.txt (line 5))
+  Using cached ISLP-0.4.0-py3-none-any.whl.metadata (7.0 kB)
+Collecting interface-meta==1.3.0 (from -r pip_requirements.txt (line 6))
+  Using cached interface_meta-1.3.0-py3-none-any.whl.metadata (6.7 kB)
+Collecting faraway==0.0.6 (from -r pip_requirements.txt (line 7))
+  Using cached faraway-0.0.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting formulaic==1.0.2 (from -r pip_requirements.txt (line 8))
+  Using cached formulaic-1.0.2-py3-none-any.whl.metadata (6.8 kB)
+Collecting fpdf==1.7.2 (from -r pip_requirements.txt (line 9))
+  Using cached fpdf-1.7.2-py2.py3-none-any.whl
+Collecting frozendict==2.4.4 (from -r pip_requirements.txt (line 10))
+  Using cached frozendict-2.4.4-cp39-cp39-macosx_11_0_arm64.whl.metadata (23 kB)
+Collecting html5lib==1.1 (from -r pip_requirements.txt (line 11))
+  Using cached html5lib-1.1-py2.py3-none-any.whl.metadata (16 kB)
+Requirement already satisfied: keras==3.6.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from -r pip_requirements.txt (line 12)) (3.6.0)
+Collecting l0bnb==1.0.0 (from -r pip_requirements.txt (line 13))
+  Using cached l0bnb-1.0.0-py3-none-any.whl
+Collecting libclang==18.1.1 (from -r pip_requirements.txt (line 14))
+  Using cached libclang-18.1.1-1-py2.py3-none-macosx_11_0_arm64.whl.metadata (5.2 kB)
+Collecting lifelines==0.29.0 (from -r pip_requirements.txt (line 15))
+  Using cached lifelines-0.29.0-py3-none-any.whl.metadata (3.2 kB)
+Collecting lightning-utilities==0.11.6 (from -r pip_requirements.txt (line 16))
+  Using cached lightning_utilities-0.11.6-py3-none-any.whl.metadata (5.2 kB)
+Collecting lxml==5.3.0 (from -r pip_requirements.txt (line 17))
+  Using cached lxml-5.3.0-cp39-cp39-macosx_10_9_universal2.whl.metadata (3.8 kB)
+Collecting ml-dtypes==0.3.2 (from -r pip_requirements.txt (line 18))
+  Using cached ml_dtypes-0.3.2-cp39-cp39-macosx_10_9_universal2.whl.metadata (20 kB)
+Collecting mpmath==1.3.0 (from -r pip_requirements.txt (line 19))
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting multitasking==0.0.11 (from -r pip_requirements.txt (line 20))
+  Using cached multitasking-0.0.11-py3-none-any.whl.metadata (5.5 kB)
+Collecting peewee==3.17.6 (from -r pip_requirements.txt (line 21))
+  Using cached peewee-3.17.6-cp39-cp39-macosx_11_0_arm64.whl
+Collecting progressbar2==4.4.2 (from -r pip_requirements.txt (line 22))
+  Using cached progressbar2-4.4.2-py3-none-any.whl.metadata (17 kB)
+Collecting pybind11==2.13.4 (from -r pip_requirements.txt (line 23))
+  Using cached pybind11-2.13.4-py3-none-any.whl.metadata (9.5 kB)
+Collecting pygam==0.9.1 (from -r pip_requirements.txt (line 24))
+  Using cached pygam-0.9.1-py3-none-any.whl.metadata (7.1 kB)
+Collecting python-utils==3.8.2 (from -r pip_requirements.txt (line 25))
+  Using cached python_utils-3.8.2-py2.py3-none-any.whl.metadata (9.7 kB)
+Collecting pytorch-lightning==2.4.0 (from -r pip_requirements.txt (line 26))
+  Using cached pytorch_lightning-2.4.0-py3-none-any.whl.metadata (21 kB)
+Collecting scipy==1.11.4 (from -r pip_requirements.txt (line 27))
+  Using cached scipy-1.11.4-cp39-cp39-macosx_12_0_arm64.whl.metadata (60 kB)
+Collecting soupsieve==2.6 (from -r pip_requirements.txt (line 28))
+  Using cached soupsieve-2.6-py3-none-any.whl.metadata (4.6 kB)
+Collecting sympy==1.13.2 (from -r pip_requirements.txt (line 29))
+  Using cached sympy-1.13.2-py3-none-any.whl.metadata (12 kB)
+Collecting tensorboard==2.16.2 (from -r pip_requirements.txt (line 30))
+  Using cached tensorboard-2.16.2-py3-none-any.whl.metadata (1.6 kB)
+Collecting tensorflow==2.16.2 (from -r pip_requirements.txt (line 31))
+  Using cached tensorflow-2.16.2-cp39-cp39-macosx_12_0_arm64.whl.metadata (4.1 kB)
+Collecting tensorflow-io-gcs-filesystem==0.37.1 (from -r pip_requirements.txt (line 32))
+  Using cached tensorflow_io_gcs_filesystem-0.37.1-cp39-cp39-macosx_12_0_arm64.whl.metadata (14 kB)
+Collecting tensorflow-macos==2.16.2 (from -r pip_requirements.txt (line 33))
+  Using cached tensorflow_macos-2.16.2-cp39-cp39-macosx_12_0_arm64.whl.metadata (3.3 kB)
+Collecting tensorflow-metal==1.1.0 (from -r pip_requirements.txt (line 34))
+  Using cached tensorflow_metal-1.1.0-cp39-cp39-macosx_12_0_arm64.whl.metadata (1.2 kB)
+Collecting torch==2.4.0 (from -r pip_requirements.txt (line 35))
+  Using cached torch-2.4.0-cp39-none-macosx_11_0_arm64.whl.metadata (26 kB)
+Collecting torchmetrics==1.4.1 (from -r pip_requirements.txt (line 36))
+  Using cached torchmetrics-1.4.1-py3-none-any.whl.metadata (20 kB)
+Collecting utils==1.0.2 (from -r pip_requirements.txt (line 37))
+  Using cached utils-1.0.2-py2.py3-none-any.whl
+Collecting webencodings==0.5.1 (from -r pip_requirements.txt (line 38))
+  Using cached webencodings-0.5.1-py2.py3-none-any.whl.metadata (2.1 kB)
+Collecting xgboost==2.1.3 (from -r pip_requirements.txt (line 39))
+  Using cached xgboost-2.1.3-py3-none-macosx_12_0_arm64.whl.metadata (2.1 kB)
+Collecting yfinance==0.2.41 (from -r pip_requirements.txt (line 40))
+  Using cached yfinance-0.2.41-py2.py3-none-any.whl.metadata (11 kB)
+Requirement already satisfied: autograd>=1.2.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from autograd-gamma==0.5.0->-r pip_requirements.txt (line 1)) (1.6.2)
+Requirement already satisfied: numpy in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from datamanager==0.2.2->-r pip_requirements.txt (line 4)) (1.26.4)
+Requirement already satisfied: pandas>=0.20 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from islp==0.4.0->-r pip_requirements.txt (line 5)) (2.2.2)
+Requirement already satisfied: scikit-learn>=1.2 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from islp==0.4.0->-r pip_requirements.txt (line 5)) (1.5.1)
+Requirement already satisfied: joblib in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from islp==0.4.0->-r pip_requirements.txt (line 5)) (1.4.2)
+Requirement already satisfied: statsmodels>=0.13 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from islp==0.4.0->-r pip_requirements.txt (line 5)) (0.14.2)
+Requirement already satisfied: typing-extensions>=4.2.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from formulaic==1.0.2->-r pip_requirements.txt (line 8)) (4.12.2)
+Requirement already satisfied: wrapt>=1.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from formulaic==1.0.2->-r pip_requirements.txt (line 8)) (1.16.0)
+Requirement already satisfied: six>=1.9 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from html5lib==1.1->-r pip_requirements.txt (line 11)) (1.16.0)
+Requirement already satisfied: absl-py in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from keras==3.6.0->-r pip_requirements.txt (line 12)) (2.1.0)
+Requirement already satisfied: rich in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from keras==3.6.0->-r pip_requirements.txt (line 12)) (13.7.1)
+Requirement already satisfied: namex in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from keras==3.6.0->-r pip_requirements.txt (line 12)) (0.0.8)
+Requirement already satisfied: h5py in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from keras==3.6.0->-r pip_requirements.txt (line 12)) (3.11.0)
+Requirement already satisfied: optree in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from keras==3.6.0->-r pip_requirements.txt (line 12)) (0.12.1)
+Requirement already satisfied: packaging in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from keras==3.6.0->-r pip_requirements.txt (line 12)) (24.1)
+Requirement already satisfied: numba>=0.53.1 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from l0bnb==1.0.0->-r pip_requirements.txt (line 13)) (0.60.0)
+Requirement already satisfied: matplotlib>=3.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from lifelines==0.29.0->-r pip_requirements.txt (line 15)) (3.9.2)
+Requirement already satisfied: setuptools in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from lightning-utilities==0.11.6->-r pip_requirements.txt (line 16)) (72.1.0)
+Requirement already satisfied: tqdm>=4.57.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from pytorch-lightning==2.4.0->-r pip_requirements.txt (line 26)) (4.66.5)
+Requirement already satisfied: PyYAML>=5.4 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from pytorch-lightning==2.4.0->-r pip_requirements.txt (line 26)) (6.0.2)
+Requirement already satisfied: fsspec>=2022.5.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from fsspec[http]>=2022.5.0->pytorch-lightning==2.4.0->-r pip_requirements.txt (line 26)) (2024.5.0)
+Requirement already satisfied: grpcio>=1.48.2 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from tensorboard==2.16.2->-r pip_requirements.txt (line 30)) (1.62.2)
+Requirement already satisfied: markdown>=2.6.8 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from tensorboard==2.16.2->-r pip_requirements.txt (line 30)) (3.6)
+Requirement already satisfied: protobuf!=4.24.0,>=3.19.6 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from tensorboard==2.16.2->-r pip_requirements.txt (line 30)) (4.25.3)
+Requirement already satisfied: tensorboard-data-server<0.8.0,>=0.7.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from tensorboard==2.16.2->-r pip_requirements.txt (line 30)) (0.7.0)
+Requirement already satisfied: werkzeug>=1.0.1 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from tensorboard==2.16.2->-r pip_requirements.txt (line 30)) (3.0.3)
+Requirement already satisfied: astunparse>=1.6.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from tensorflow==2.16.2->-r pip_requirements.txt (line 31)) (1.6.3)
+Requirement already satisfied: flatbuffers>=23.5.26 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from tensorflow==2.16.2->-r pip_requirements.txt (line 31)) (24.3.25)
+Requirement already satisfied: gast!=0.5.0,!=0.5.1,!=0.5.2,>=0.2.1 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from tensorflow==2.16.2->-r pip_requirements.txt (line 31)) (0.5.5)
+Requirement already satisfied: google-pasta>=0.1.1 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from tensorflow==2.16.2->-r pip_requirements.txt (line 31)) (0.2.0)
+Requirement already satisfied: opt-einsum>=2.3.2 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from tensorflow==2.16.2->-r pip_requirements.txt (line 31)) (3.3.0)
+Requirement already satisfied: requests<3,>=2.21.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from tensorflow==2.16.2->-r pip_requirements.txt (line 31)) (2.32.3)
+Requirement already satisfied: termcolor>=1.1.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from tensorflow==2.16.2->-r pip_requirements.txt (line 31)) (2.4.0)
+Requirement already satisfied: wheel~=0.35 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from tensorflow-metal==1.1.0->-r pip_requirements.txt (line 34)) (0.43.0)
+Requirement already satisfied: filelock in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from torch==2.4.0->-r pip_requirements.txt (line 35)) (3.15.4)
+Requirement already satisfied: networkx in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from torch==2.4.0->-r pip_requirements.txt (line 35)) (3.2.1)
+Requirement already satisfied: jinja2 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from torch==2.4.0->-r pip_requirements.txt (line 35)) (3.1.4)
+Requirement already satisfied: platformdirs>=2.0.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from yfinance==0.2.41->-r pip_requirements.txt (line 40)) (4.2.2)
+Requirement already satisfied: pytz>=2022.5 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from yfinance==0.2.41->-r pip_requirements.txt (line 40)) (2024.1)
+Requirement already satisfied: future>=0.15.2 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from autograd>=1.2.0->autograd-gamma==0.5.0->-r pip_requirements.txt (line 1)) (1.0.0)
+Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from fsspec[http]>=2022.5.0->pytorch-lightning==2.4.0->-r pip_requirements.txt (line 26)) (3.10.3)
+Requirement already satisfied: importlib-metadata>=4.4 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from markdown>=2.6.8->tensorboard==2.16.2->-r pip_requirements.txt (line 30)) (8.2.0)
+Requirement already satisfied: contourpy>=1.0.1 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from matplotlib>=3.0->lifelines==0.29.0->-r pip_requirements.txt (line 15)) (1.2.1)
+Requirement already satisfied: cycler>=0.10 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from matplotlib>=3.0->lifelines==0.29.0->-r pip_requirements.txt (line 15)) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from matplotlib>=3.0->lifelines==0.29.0->-r pip_requirements.txt (line 15)) (4.53.1)
+Requirement already satisfied: kiwisolver>=1.3.1 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from matplotlib>=3.0->lifelines==0.29.0->-r pip_requirements.txt (line 15)) (1.4.5)
+Requirement already satisfied: pillow>=8 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from matplotlib>=3.0->lifelines==0.29.0->-r pip_requirements.txt (line 15)) (10.4.0)
+Requirement already satisfied: pyparsing>=2.3.1 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from matplotlib>=3.0->lifelines==0.29.0->-r pip_requirements.txt (line 15)) (3.1.2)
+Requirement already satisfied: python-dateutil>=2.7 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from matplotlib>=3.0->lifelines==0.29.0->-r pip_requirements.txt (line 15)) (2.9.0)
+Requirement already satisfied: importlib-resources>=3.2.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from matplotlib>=3.0->lifelines==0.29.0->-r pip_requirements.txt (line 15)) (6.4.2)
+Requirement already satisfied: llvmlite<0.44,>=0.43.0dev0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from numba>=0.53.1->l0bnb==1.0.0->-r pip_requirements.txt (line 13)) (0.43.0)
+Requirement already satisfied: tzdata>=2022.7 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from pandas>=0.20->islp==0.4.0->-r pip_requirements.txt (line 5)) (2024.1)
+Requirement already satisfied: charset-normalizer<4,>=2 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from requests<3,>=2.21.0->tensorflow==2.16.2->-r pip_requirements.txt (line 31)) (3.3.2)
+Requirement already satisfied: idna<4,>=2.5 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from requests<3,>=2.21.0->tensorflow==2.16.2->-r pip_requirements.txt (line 31)) (3.7)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from requests<3,>=2.21.0->tensorflow==2.16.2->-r pip_requirements.txt (line 31)) (2.2.2)
+Requirement already satisfied: certifi>=2017.4.17 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from requests<3,>=2.21.0->tensorflow==2.16.2->-r pip_requirements.txt (line 31)) (2024.12.14)
+Requirement already satisfied: threadpoolctl>=3.1.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from scikit-learn>=1.2->islp==0.4.0->-r pip_requirements.txt (line 5)) (3.5.0)
+Requirement already satisfied: patsy>=0.5.6 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from statsmodels>=0.13->islp==0.4.0->-r pip_requirements.txt (line 5)) (0.5.6)
+Requirement already satisfied: MarkupSafe>=2.1.1 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from werkzeug>=1.0.1->tensorboard==2.16.2->-r pip_requirements.txt (line 30)) (2.1.5)
+Requirement already satisfied: markdown-it-py>=2.2.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from rich->keras==3.6.0->-r pip_requirements.txt (line 12)) (3.0.0)
+Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from rich->keras==3.6.0->-r pip_requirements.txt (line 12)) (2.18.0)
+Requirement already satisfied: aiohappyeyeballs>=2.3.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2022.5.0->pytorch-lightning==2.4.0->-r pip_requirements.txt (line 26)) (2.3.6)
+Requirement already satisfied: aiosignal>=1.1.2 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2022.5.0->pytorch-lightning==2.4.0->-r pip_requirements.txt (line 26)) (1.3.1)
+Requirement already satisfied: attrs>=17.3.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2022.5.0->pytorch-lightning==2.4.0->-r pip_requirements.txt (line 26)) (24.2.0)
+Requirement already satisfied: frozenlist>=1.1.1 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2022.5.0->pytorch-lightning==2.4.0->-r pip_requirements.txt (line 26)) (1.4.1)
+Requirement already satisfied: multidict<7.0,>=4.5 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2022.5.0->pytorch-lightning==2.4.0->-r pip_requirements.txt (line 26)) (6.0.5)
+Requirement already satisfied: yarl<2.0,>=1.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2022.5.0->pytorch-lightning==2.4.0->-r pip_requirements.txt (line 26)) (1.9.4)
+Requirement already satisfied: async-timeout<5.0,>=4.0 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2022.5.0->pytorch-lightning==2.4.0->-r pip_requirements.txt (line 26)) (4.0.3)
+Requirement already satisfied: zipp>=0.5 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from importlib-metadata>=4.4->markdown>=2.6.8->tensorboard==2.16.2->-r pip_requirements.txt (line 30)) (3.20.0)
+Requirement already satisfied: mdurl~=0.1 in /opt/miniconda3/envs/test/lib/python3.9/site-packages (from markdown-it-py>=2.2.0->rich->keras==3.6.0->-r pip_requirements.txt (line 12)) (0.1.2)
+Using cached av-14.0.1-cp39-cp39-macosx_11_0_arm64.whl (19.6 MB)
+Using cached beautifulsoup4-4.12.3-py3-none-any.whl (147 kB)
+Using cached dataManager-0.2.2-py3-none-any.whl (3.5 kB)
+Using cached ISLP-0.4.0-py3-none-any.whl (3.6 MB)
+Using cached interface_meta-1.3.0-py3-none-any.whl (14 kB)
+Using cached faraway-0.0.6-py3-none-any.whl (224 kB)
+Using cached formulaic-1.0.2-py3-none-any.whl (94 kB)
+Using cached frozendict-2.4.4-cp39-cp39-macosx_11_0_arm64.whl (37 kB)
+Using cached html5lib-1.1-py2.py3-none-any.whl (112 kB)
+Using cached libclang-18.1.1-1-py2.py3-none-macosx_11_0_arm64.whl (25.8 MB)
+Using cached lifelines-0.29.0-py3-none-any.whl (349 kB)
+Using cached lightning_utilities-0.11.6-py3-none-any.whl (26 kB)
+Using cached lxml-5.3.0-cp39-cp39-macosx_10_9_universal2.whl (8.1 MB)
+Using cached ml_dtypes-0.3.2-cp39-cp39-macosx_10_9_universal2.whl (389 kB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Using cached multitasking-0.0.11-py3-none-any.whl (8.5 kB)
+Using cached progressbar2-4.4.2-py3-none-any.whl (56 kB)
+Using cached pybind11-2.13.4-py3-none-any.whl (240 kB)
+Using cached pygam-0.9.1-py3-none-any.whl (522 kB)
+Using cached python_utils-3.8.2-py2.py3-none-any.whl (27 kB)
+Using cached pytorch_lightning-2.4.0-py3-none-any.whl (815 kB)
+Using cached scipy-1.11.4-cp39-cp39-macosx_12_0_arm64.whl (29.7 MB)
+Using cached soupsieve-2.6-py3-none-any.whl (36 kB)
+Using cached sympy-1.13.2-py3-none-any.whl (6.2 MB)
+Using cached tensorboard-2.16.2-py3-none-any.whl (5.5 MB)
+Using cached tensorflow-2.16.2-cp39-cp39-macosx_12_0_arm64.whl (227.0 MB)
+Using cached tensorflow_io_gcs_filesystem-0.37.1-cp39-cp39-macosx_12_0_arm64.whl (3.5 MB)
+Using cached tensorflow_macos-2.16.2-cp39-cp39-macosx_12_0_arm64.whl (2.1 kB)
+Using cached tensorflow_metal-1.1.0-cp39-cp39-macosx_12_0_arm64.whl (1.4 MB)
+Using cached torch-2.4.0-cp39-none-macosx_11_0_arm64.whl (62.1 MB)
+Using cached torchmetrics-1.4.1-py3-none-any.whl (866 kB)
+Using cached webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Using cached xgboost-2.1.3-py3-none-macosx_12_0_arm64.whl (1.9 MB)
+Using cached yfinance-0.2.41-py2.py3-none-any.whl (73 kB)
+Installing collected packages: webencodings, peewee, multitasking, mpmath, libclang, fpdf, faraway, utils, tensorflow-metal, tensorflow-io-gcs-filesystem, sympy, soupsieve, scipy, python-utils, pybind11, ml-dtypes, lxml, lightning-utilities, interface-meta, html5lib, frozendict, datamanager, av, xgboost, torch, progressbar2, l0bnb, beautifulsoup4, autograd-gamma, yfinance, torchmetrics, tensorboard, pygam, formulaic, tensorflow, pytorch-lightning, lifelines, tensorflow-macos, islp
+  Attempting uninstall: scipy
+    Found existing installation: scipy 1.13.1
+    Uninstalling scipy-1.13.1:
+      Successfully uninstalled scipy-1.13.1
+  Attempting uninstall: ml-dtypes
+    Found existing installation: ml_dtypes 0.4.0
+    Uninstalling ml_dtypes-0.4.0:
+      Successfully uninstalled ml_dtypes-0.4.0
+  Attempting uninstall: tensorboard
+    Found existing installation: tensorboard 2.17.0
+    Uninstalling tensorboard-2.17.0:
+      Successfully uninstalled tensorboard-2.17.0
+  Attempting uninstall: tensorflow
+    Found existing installation: tensorflow 2.17.0
+    Uninstalling tensorflow-2.17.0:
+      Successfully uninstalled tensorflow-2.17.0
+Successfully installed autograd-gamma-0.5.0 av-14.0.1 beautifulsoup4-4.12.3 datamanager-0.2.2 faraway-0.0.6 formulaic-1.0.2 fpdf-1.7.2 frozendict-2.4.4 html5lib-1.1 interface-meta-1.3.0 islp-0.4.0 l0bnb-1.0.0 libclang-18.1.1 lifelines-0.29.0 lightning-utilities-0.11.6 lxml-5.3.0 ml-dtypes-0.3.2 mpmath-1.3.0 multitasking-0.0.11 peewee-3.17.6 progressbar2-4.4.2 pybind11-2.13.4 pygam-0.9.1 python-utils-3.8.2 pytorch-lightning-2.4.0 scipy-1.11.4 soupsieve-2.6 sympy-1.13.2 tensorboard-2.16.2 tensorflow-2.16.2 tensorflow-io-gcs-filesystem-0.37.1 tensorflow-macos-2.16.2 tensorflow-metal-1.1.0 torch-2.4.0 torchmetrics-1.4.1 utils-1.0.2 webencodings-0.5.1 xgboost-2.1.3 yfinance-0.2.41
+(test) felipebastos@Felipes-MacBook-Pro car-customer-prediction % ls
+README.md		code			conda_requirements.txt	data			image			pip_requirements.txt
+(test) felipebastos@Felipes-MacBook-Pro car-customer-prediction % code code
+(test) felipebastos@Felipes-MacBook-Pro car-customer-prediction % code code
+(test) felipebastos@Felipes-MacBook-Pro car-customer-prediction %     
